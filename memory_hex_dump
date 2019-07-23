@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+{
+	int i;
+	char str[20] = "hackerschool!";
+
+	printf("%s\n", str);
+
+	printf("=====HEX DUMP START=====\n");
+
+	//주소 값 출력
+	printf("0x%08x\n", &str);
+
+	//16진수 값 출력
+	for (i = 0; i < sizeof(str); i++)
+		printf("%02x", str[i]);
+
+	printf("\n=====HEX DUMP END=====\n");
+	
+}
