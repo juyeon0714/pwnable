@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main()
+{
+	int auth = 0;
+	char passwd[20];
+	printf("enter the password");
+	gets(passwd);
+	if (strcmp(passwd, "abcd") == 0)
+		auth = 1;
+	if (auth)
+		printf("축하합니다.인증에 통과하였습니다!\n");
+	else
+		printf("인증에 실패하였습니다.\n");
+}
